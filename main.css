@@ -23,7 +23,7 @@ body {
 
 #home {
     height:80%;
-    width:33%;
+    width:30%;
     float: left;
     display: inline-block;
     
@@ -33,20 +33,20 @@ body {
 
 #one {
     height: 80%;
-    width: 33%;
+    width: 30%;
     float:left;
     margin-left:0.5%;
-    background-image: url(bg1.png);
+    background-image: url(bg2.png);
     background-size: contain;
     display: inline-block;
 }
 
 #two {
     height: 80%;
-    width: 33%;
+    width: 30%;
     float:left;
     margin-left:0.5%;
-    background-image: url(bg1.png);
+    background-image: url(bg3.png);
     background-size: contain;
     display: inline-block;
 }
