@@ -7,14 +7,31 @@
     <title>Pathways Design</title>
     <meta name="description" content="Pathways Design">
     <link rel="stylesheet" href="main.css">
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script type='text/javascript' src='/js/mousewheel/jquery.mousewheel.min.js'></script>
+        
+    <script type="text/javascript" src="/js/jquery-colour.js"></script>
+    <script type="text/javascript" src="/js/jquery-easing.js"></script>
+    
 </head>
     
-<body>
+    <body>
         
         <div id="wrapper">
             <div id="home">
-                <a href="#one">One</a>
-                <a href="#two">Two</a>
+                <div id="homewrap">
+                    <div id="header">
+                        <img src="banner.png">
+                    </div>
+                    <nav>
+                        <ul>
+                            <li class="button"><a href="#one">About Us</a></li>
+                            <li><a href="#two">Portfolio</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <div id="one">
                 Hi
@@ -23,6 +40,31 @@
                 Hi
             </div>
         </div>
+    
+    
         
+    <script type="text/javascript">/*Function for mouse to scroll horizontally*/
+        $(document).ready(function() {
+            $('html, body, *').mousewheel(function(e, delta) {
+                this.scrollLeft -= (delta * 40);
+                e.preventDefault();
+            });
+        });
+        
+        /*Smooth horizontal scrolling*/
+        $(function() {
+            $('ul.nav a')bind('click',function(event){
+                var $anchor = $(this);
+                
+                $('html, body').stop().animate({
+                    scrollLeft: $($anchor.attr('href')).offset().left
+                }, 1000);
+            
+                event.preventDefault();
+            });
+        });
+    </script>
+        
+
     </body>
 </html>
