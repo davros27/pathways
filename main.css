@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    height:70vw;
+    width:auto;
+    text-align: center;
+    
+    overflow-x: hidden;
+}
+
+#wrapper {
+    height: 100%;
+    width: 300%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: inline-block;
+    
+}
+
+#home {
+    height:80%;
+    width:33%;
+    float: left;
+    display: inline-block;
+    
+    background-image: url(bg1.png);
+    background-size: contain;
+}
+
+#one {
+    height: 80%;
+    width: 33%;
+    float:left;
+    margin-left:0.5%;
+    background-image: url(bg1.png);
+    background-size: contain;
+    display: inline-block;
+}
+
+#two {
+    height: 80%;
+    width: 33%;
+    float:left;
+    margin-left:0.5%;
+    background-image: url(bg1.png);
+    background-size: contain;
+    display: inline-block;
+}
